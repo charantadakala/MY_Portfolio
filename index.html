@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Charan Teja Tadakala | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -11,34 +11,40 @@
     <nav>
       <ul>
         <li><a href="#about">About Me</a></li>
-        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="about" class="section">
+    <section id="about">
       <h1>Charan Teja Tadakala</h1>
-      <p>
-        Pursuing BTech 2nd year at KG Reddy College of Engineering and Technology, Hyderabad.
-      </p>
-      <p>
-        I have a side business as a transport agent specializing in heavy vehicles contracts.
-      </p>
-      <h2>Skills & Experience</h2>
+      <p>👨‍🎓 BTech 2nd Year at KG Reddy College of Engineering & Technology, Hyderabad.</p>
+      <p>🚛 Transport Agent for heavy vehicles and contracts.</p>
+      <h2>Skills</h2>
       <ul>
         <li>C Programming</li>
         <li>Python</li>
         <li>Excel</li>
         <li>Power BI</li>
       </ul>
-      <p>Actively learning new skills to grow and improve continuously.</p>
+      <p>📚 Actively learning new skills every day.</p>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact">
       <h2>Contact Me</h2>
-      <p>Phone: <a href="tel:+919603929474">9603929474</a></p>
-      <p>Email: <a href="mailto:charantejatadakala21@gmail.com">charantejatadakala21@gmail.com</a></p>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        <p id="form-status"></p>
+      </form>
+
+      <div class="direct-contact">
+        <p>📞 <a href="tel:+919603929474">+91 9603929474</a></p>
+        <p>📧 <a href="mailto:charantejatadakala21@gmail.com">charantejatadakala21@gmail.com</a></p>
+      </div>
     </section>
   </main>
 
