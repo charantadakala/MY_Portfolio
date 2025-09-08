@@ -1,8 +1,16 @@
-// Smooth scrolling for nav links
-document.querySelectorAll('nav a').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const targetId = link.getAttribute('href').substring(1);
-    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
-  });
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  // Simulate form submission (no backend)
+  const status = document.getElementById('form-status');
+  status.textContent = '✅ Message sent successfully!';
+  status.style.color = 'green';
+
+  // Reset form
+  this.reset();
+
+  // Clear message after 3 seconds
+  setTimeout(() => {
+    status.textContent = '';
+  }, 3000);
 });
